@@ -1,0 +1,16 @@
+#include <iostream>
+int main()
+{
+	int variable = 8;   //四个字节的整数 char a= 'A'   ''A=65       -2b -> 2b
+	std::cout << variable << std::endl;
+	variable = 20;
+	std::cout << variable << std::endl;
+	char a = 65;
+	std::cout << a << std::endl; //会把a当作一个字符而不是数字，电脑会根据变量类型去输出
+	float variable1 = 5.5;
+	std::cout << variable1 << std::endl; //浮点数是四个字节，双精度是八个字节
+	bool variable2 = true; 
+	std::cout << variable2 << std::endl;  //boolean 代表true or false，1对0错
+	std::cout << sizeof(bool) << std::endl;  //输出bool所占的字节大小
+	std::cin.get();
+}
